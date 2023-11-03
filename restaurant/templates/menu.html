@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section>
+    <article>
+        <h1>menu</h1>
+        {% for item in list %}
+        <h3>item.dish_name</h3>
+        <p>item.dish_discription</p>
+        <p>item.price</p>
+        {% endfor %}
+    </article>
+</section>
+
+
+
+{% endblock %}
